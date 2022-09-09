@@ -1,0 +1,29 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for building production-ready RESTful APIs using Node.js, Express written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rimraf dist && swc ./src -d dist",
+    "test": "yarn build && yarn start",
+    "del": "rimraf dist"
+  },
+  "repository": "https://github.com/sreyom31/node-typescript-boilerplate",
+  "keywords": [
+    "nodejs",
+    "express",
+    "docker",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/sreyom31/node-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sreyom31/node-typescript-boilerplate#readme",
+  "author": "sreyom31 <sreyom31@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@swc/cli": "^0.1.57"
+  }
+}
