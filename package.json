@@ -23,7 +23,13 @@
   "author": "sreyom31 <sreyom31@gmail.com>",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "@swc/cli": "^0.1.57"
+  "dependencies": {},
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.249",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.16",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
   }
 }
