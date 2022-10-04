@@ -1,0 +1,129 @@
+main {
+    overflow: hidden;
+}
+
+.login-section {
+    height: 100vh;
+    background-image: linear-gradient(-135deg, #360033, #0b8793);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-arc {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    border: 2.5rem solid rgba(118, 235, 246, 0.25);
+    transform: translate(40%, -45%);
+}
+
+.login-card-container {
+    height: 80vh;
+    width: 85%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(23, 22, 23, 0.4);
+    align-items: center;
+    border-radius: 22px;
+
+}
+
+.login-card-container:after {
+    content: "";
+    height: inherit;
+    width: inherit;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(-135deg, rgba(31, 31, 31, 0.2), rgba(4, 8, 9, 0.7), rgba(4, 8, 9, 0.7), rgba(35, 35, 35, 0.3));
+    border-radius: 22px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.stock-ig {
+    width: 30rem;
+    height: 30rem;
+    background-image: linear-gradient(rgba(4, 4, 5, 0.4), rgba(4, 4, 5, 0.2)), url("../images/login.jpg");
+    background-color: #040405;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.login-card>h2 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #A5C9CA;
+}
+
+form {
+    color: #A5C9CA;
+}
+
+.login-label {
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.2rem 1rem;
+    border-radius: 15px;
+    border: 1px solid #A5C9CA;
+    margin-bottom: 1.2rem;
+}
+
+.login-label>i {
+    margin-right: 1rem;
+}
+
+input {
+    color: #A5C9CA;
+    padding: 0.8rem 0.4rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+}
+
+input:focus, input:active, input:visited, input:hover {
+    background: transparent;
+}
+
+#submit-btn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1c1b35;
+    padding: 0.6rem 2.2rem;
+    cursor: pointer;
+    border: 1px solid #A5C9CA;
+    background: #A5C9CA;
+    width: 100%;
+}
+
+.direct-to-signup {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.direct-to-signup>a:link,
+.direct-to-signup>a:visited {
+    margin-left: 0.8rem;
+    color: #208ed3;
+    transition: all 0.4s;
+}
+
+.direct-to-signup>a:hover,
+.direct-to-signup>a:active {
+    color: #47cdd0;
+}

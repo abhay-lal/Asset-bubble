@@ -1,0 +1,110 @@
+h3 {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.decision-container {
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.decision-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+#bearish, #bullish {
+    padding: 0.4rem 1.8rem;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #1c1b35;
+}
+
+#bullish {
+    background-color: #e45470;
+}
+
+#bullish:hover {
+    background-color: #e1445b;
+}
+
+#bearish {
+    background-color: #9494cc;
+}
+
+#bearish:hover {
+    background-color: #7083cb;
+}
+
+.comments-main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    height: 60vh;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+.comments-speedometer {
+    height: 300px;
+    width: 300px;
+    margin: 50% auto 0;
+    transform: translateY(-50%);
+}
+
+.comments-container {
+    margin: 2rem 0;
+    padding: 2rem 1.2rem;
+    height: 100%;
+    overflow: scroll;
+}
+
+.comments-container::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 6px;
+}
+
+.comments-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #111026;
+}
+
+.comments-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+.comments-container::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #555;
+}
+
+.comment {
+    width: 80%;
+    margin: 0 auto 1.2rem;
+    background-color: rgba(53, 51, 124, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+
+.comment-line {
+    width: 90%;
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+    line-height: 135%;
+    word-spacing: 2px;
+}
+
+.comment-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-user {
+    color: #A5C9CA;
+    font-size: 1.15rem;
+}

@@ -1,0 +1,84 @@
+main {
+
+}
+
+.home-section {
+    height: 70vh;
+    position: relative;
+    background-image: url("../images/Black_on_white_dotted_world.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-content {
+    margin: 4rem 0 3rem;
+    text-align: center;
+}
+
+.home-heading-text {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.model-button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+    padding: 0.6rem 2rem;
+    border: 1px transparent;
+    border-radius: 8px;
+    margin-right: 2rem;
+    transition: all 0.4s;
+}
+
+.btn-white:link,
+.btn-white:visited {
+    color: #222222;
+    border: 1px solid #e0e0e0;
+    background-color: #EEEEEE;
+}
+
+.btn-white:hover,
+.btn-white:active {
+    background-color: #d2d2d2;
+}
+
+.btn-blue:link,
+.btn-blue:visited {
+    color: #cee7e8;
+    border: 1px solid #251B37;
+    background-color: #251B37;
+}
+
+.btn-blue:hover,
+.btn-blue:active {
+    background-color: #322750;
+}
+
+.scroll-down {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem 1.1rem;
+    border-radius: 50%;
+    border: 2px #eeeeee solid;
+    font-size: 1.6rem;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.scroll-down:hover {
+    color: #1c1b35;
+    background-color: #eee;
+    opacity: 0.9;
+}
