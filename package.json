@@ -1,0 +1,23 @@
+{
+  "name": "bigbull",
+  "version": "1.0.0",
+  "description": "https://sonarcloud.io/summary/overall?id=examly-test_4406b380-4ee6-4320-955b-eb9e6e2f0f44",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rimraf dist && swc ./src -d dist",
+    "dev": "yarn build && yarn start",
+    "del": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44.git"
+  },
+  "keywords": ["nodejs", "express", "typescript"],
+  "author": "sreyom31",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/issues"
+  },
+  "homepage": "https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44#readme"
+}
