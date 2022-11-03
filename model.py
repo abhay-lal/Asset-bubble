@@ -15,7 +15,6 @@ def model():
             df.drop(columns="TIME",inplace=True)
             x=df.drop(columns="Crash")
             y=df["Crash"]
-            feature_cols=x.columns
             x_train,x_test,y_train,y_test=train_test_split(x,y)
             dcl=DecisionTreeClassifier()
             dcl.fit(x_train,y_train)
