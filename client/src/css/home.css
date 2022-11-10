@@ -1,9 +1,5 @@
-main {
-
-}
-
 .home-section {
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
     background-image: url("../images/Black_on_white_dotted_world.png");
     background-position: center;
@@ -64,6 +60,7 @@ main {
 }
 
 .scroll-down {
+    display: none;
     cursor: pointer;
     position: absolute;
     bottom: 2rem;
@@ -81,4 +78,23 @@ main {
     color: #1c1b35;
     background-color: #eee;
     opacity: 0.9;
+}
+
+@media only screen and (max-width: 1140px) {
+    .home-section {
+        min-height: 40vh;
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .home-section {
+        background-size: cover;
+    }
+
+    .btn {
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+
 }

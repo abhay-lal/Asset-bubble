@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../reuse/header";
 import "../../css/home.css"
+import {Link} from "react-router-dom";
 
 export default function () {
     return (
@@ -14,8 +15,8 @@ export default function () {
 
             <section className={"home-section"}>
                 <div className={"model-button"}>
-                    <a href={"/crashProb"} className={"btn btn-white"}>Market Data</a>
-                    <a href={"/checkCrash"} className={"btn btn-blue"}>Custom Data</a>
+                    <Link to={"/crashProb"} className={"btn btn-white"}>Market Data</Link>
+                    <Link to={"/checkCrash"} className={"btn btn-blue"}>Custom Data</Link>
                 </div>
 
                 <div className={"scroll-down"}>

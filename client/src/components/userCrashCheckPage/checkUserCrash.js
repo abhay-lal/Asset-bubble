@@ -3,6 +3,7 @@ import "../../css/crashPage.css"
 import UserCrashSpeedometer from "./usercrashspeedometer";
 import userCardData from "./userCardData";
 import UserDataCard from "./userDataCard";
+import CustomDataForm from "./customDataForm";
 
 export default function () {
 
@@ -19,13 +20,10 @@ export default function () {
             <Header />
 
             <section className={"user-data-check"}>
-                <div className={"graph-container"}>
-                    <h2>Your Previous Data</h2>
-                    <div className={"prev-card-container"}>
-                        {dataListCards}
-                    </div>
-                </div>
 
+                <div>
+                    <CustomDataForm />
+                </div>
 
                 <div className={"content-speedometer"}>
                     <UserCrashSpeedometer
@@ -33,6 +31,13 @@ export default function () {
                     />
                 </div>
             </section>
+
+            <div className={"graph-container"}>
+                <h2>Your Previous Data</h2>
+                <div className={"prev-card-container"}>
+                    {dataListCards}
+                </div>
+            </div>
 
         </main>
     )

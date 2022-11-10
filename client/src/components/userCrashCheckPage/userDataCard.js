@@ -1,4 +1,5 @@
 import AddDataListItem from "./addDataListItem";
+import {Link} from "react-router-dom";
 
 export default function (props) {
 
@@ -22,7 +23,7 @@ export default function (props) {
             <ul className={"data-list"}>
                 {dataList}
             </ul>
-            <a href={"#"} className={"validate-btn"}>
+            <a href={"#"} onClick={(e)=>{e.preventDefault()}} className={"validate-btn"}>
                 Validate Again
             </a>
         </div>

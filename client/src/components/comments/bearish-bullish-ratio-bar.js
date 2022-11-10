@@ -13,14 +13,14 @@ export default function (props) {
         setTimeout(()=>{
             setBearishVal(props.value);
         }, 1000)
-    }, [bearishVal])
+    }, [])
 
     return (
         <CircularProgressbarWithChildren
             value={bearishVal}
             strokeWidth={props.strokeWidth}
             styles={buildStyles({
-                trailColor: 'rgba(20,100,100,0.5)',
+                trailColor: 'rgba(8,42,42,0.5)',
                 pathColor: `rgb(158, 119, 236)`,
                 strokeLinecap: "butt",
                 pathTransitionDuration: 0.8
@@ -38,7 +38,8 @@ export default function (props) {
                     styles={buildStyles({
                         trailColor: 'rgba(255,255,255,0.15)',
                         pathColor: `rgb(245,67,67)`,
-                        rotation: 0.2,
+                        rotation: bearishVal/100,
+                        counterClockwise: true,
                         strokeLinecap: "butt",
                         pathTransitionDuration: 0.8
                     })}

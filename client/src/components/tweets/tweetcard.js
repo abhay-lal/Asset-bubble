@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function (props) {
 
     const today = new Date();
@@ -7,7 +9,7 @@ export default function (props) {
         <div className={"tweet-card-container"}>
 
             <div className={"tweet-pop-up"}>
-                <a href={"404"}> <i className="fa-brands fa-twitter"></i> </a>
+                <Link to={"404"}> <i className="fa-brands fa-twitter"></i> </Link>
             </div>
 
             <div className={"tweet-card"}>
@@ -26,7 +28,7 @@ export default function (props) {
                 </div>
 
                 <div className={"follow-tweet"}>
-                    <a href={"/404"}>Follow Tweet <i className="fa-brands fa-twitter"></i> </a>
+                    <Link to={"/404"}>Follow Tweet <i className="fa-brands fa-twitter"></i> </Link>
                 </div>
 
             </div>

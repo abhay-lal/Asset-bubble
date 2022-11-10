@@ -5,6 +5,8 @@ import CountryStockIndex from "./country-stock-index-map";
 import CountryStockIndexSidebar from "./country-stock-index-sidebar";
 import parametersData from "./parametersData";
 import ParameterIndexDisplay from "./parameterIndexDisplay";
+import {Link} from "react-router-dom";
+import React from "react";
 
 export default function CrashProbPublic () {
 
@@ -62,7 +64,8 @@ export default function CrashProbPublic () {
                     </div>
 
                     <div className={"opinion-container"}>
-                        <a href={"/comments"} className={"opinion"}>Share your opinion</a>
+                        <Link to={"/comments"} className={"opinion"}>Share your opinion</Link>
+                        <Link to={"/checkCrash"} className={"opinion"}>Custom Data</Link>
                     </div>
 
 
@@ -80,6 +83,44 @@ export default function CrashProbPublic () {
                     </div>
                 </div>
             </section>
+
+            {/*<section className={"mobile-home-page"}>*/}
+            {/*    <div className={"threat-level"}>*/}
+            {/*        <Speedometer*/}
+            {/*            value={80}*/}
+            {/*            text={40}*/}
+            {/*            strokeWidth={8}*/}
+            {/*        />*/}
+            {/*    </div>*/}
+
+            {/*    <div className={"opinion-container"}>*/}
+            {/*        <link href={"/comments"} className={"opinion"}>Share your opinion</a>*/}
+            {/*    </div>*/}
+
+            {/*    <div className={"headings"}>*/}
+            {/*        <h2>Financial Statics</h2>*/}
+            {/*        <h1>$1,287,572</h1>*/}
+            {/*    </div>*/}
+
+            {/*    <div className={"select-year"}>*/}
+            {/*        <div className={"year"}>2018</div>*/}
+            {/*        <div className={"year active-year"}>2019</div>*/}
+            {/*        <div className={"year"}>2020</div>*/}
+            {/*        <div className={"year"}>2021</div>*/}
+            {/*    </div>*/}
+
+
+            {/*    <div>*/}
+            {/*        <div className={"gradient-hr"}></div>*/}
+
+            {/*        <div className={"stocks-data-container"}>*/}
+            {/*            <ul className={"stocks-list"}>*/}
+            {/*                {countrySideCards}*/}
+            {/*            </ul>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+
+            {/*</section>*/}
 
         </main>
     )

@@ -1,6 +1,6 @@
 .just-tweets {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -120,3 +120,25 @@
     background-color: #A5C9CA;
 }
 
+.mobile-tweets-container {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .just-tweets {
+        display: none;
+    }
+
+    .mobile-tweets-container {
+        display: block;
+    }
+
+    .tweet-card {
+        margin-bottom: 3.2rem;
+    }
+
+    .tweet-pop-up {
+        display: none;
+    }
+
+}

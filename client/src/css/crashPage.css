@@ -18,21 +18,19 @@
 }
 
 .graph-container {
+    margin-top: 4.2rem;
     padding: 0 0 0 2rem;
 }
 
 .prev-card-container {
     margin: 0 auto;
     padding: 2rem 3rem;
-    max-height: 80vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
     gap: 2rem;
     background-color: rgba(17, 16, 38, 0.2);
     border-radius: 20px;
-    overflow: scroll;
-    overflow-x: hidden;
-    height: inherit;
 }
 
 .prev-card-container::-webkit-scrollbar {
@@ -58,7 +56,7 @@
 
 .prev-data-card {
     display: inline-block;
-    padding: 1.2rem 2.8rem 2rem;
+    padding: 1.2rem 3.2rem 2rem;
     text-align: left;
     background-color: #1c1b35;
     border: 2px solid #111026;
@@ -143,3 +141,51 @@
     border: 3px solid #171617;
 }
 
+.custom-data-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.data-elt {
+    display: block;
+    width: 60%;
+    padding: 0.2rem 2rem;
+    margin: 0 auto 1.2rem;
+    color: #A5C9CA;
+    border-radius: 15px;
+    border: 1px solid #8830a7;
+}
+
+.data-elt>input {
+    width: 100%;
+    color: #A5C9CA;
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+}
+
+.data-elt>input::placeholder {
+    color: #f4f4f4;
+    opacity: 0.6;
+}
+
+.custom-data-form>button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background: #8830a7;
+    color: #f4f4f4;
+    padding: 0.6rem 0.2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+.custom-data-form>button:hover {
+    background: #a339c9;
+}

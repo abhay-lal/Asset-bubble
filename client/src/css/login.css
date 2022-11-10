@@ -43,7 +43,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(-135deg, rgba(31, 31, 31, 0.2), rgba(4, 8, 9, 0.7), rgba(4, 8, 9, 0.7), rgba(35, 35, 35, 0.3));
+    background: linear-gradient(-135deg, rgba(31, 31, 31, 0.2), rgba(4, 8, 9, 0.7),
+                    rgba(4, 8, 9, 0.7), rgba(35, 35, 35, 0.3));
     border-radius: 22px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
@@ -86,7 +87,7 @@ form {
     margin-right: 1rem;
 }
 
-input {
+.login-label>input {
     color: #A5C9CA;
     padding: 0.8rem 0.4rem;
     font-size: 1.2rem;
@@ -107,6 +108,7 @@ input:focus, input:active, input:visited, input:hover {
     padding: 0.6rem 2.2rem;
     cursor: pointer;
     border: 1px solid #A5C9CA;
+    border-radius: 8px;
     background: #A5C9CA;
     width: 100%;
 }
