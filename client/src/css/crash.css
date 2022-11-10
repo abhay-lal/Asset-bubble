@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020102FF;
+    color: #f4f4f4;
+}
+
+body::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #111026;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #999;
+}
+
+.heading-container {
+    color: #cbcbcb;
+    margin: 4rem 0 6rem;
+    text-align: center;
+}
+
+a { text-decoration: none }
+
+ul { list-style: none }
+
+h1, h2 {
+    word-spacing: 4px;
+    line-height: 145%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 3rem;
+    margin: 0.3rem 0 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------  Header  --------------------- */
+/* ----------------------------------------------------- */
+
+header {
+    width: 55%;
+    margin: 1.2rem auto 0;
+    border-radius: 25px;
+    padding: 0.4rem 3.7rem;
+    background-color: #1c1b35;
+    z-index: 9999;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.company-name {
+    font-size: 1.4rem;
+    color: #A5C9CA;
+}
+
+.top-nav-links {
+    display: flex;
+}
+
+.top-nav-links>li {
+    margin-left: 3rem;
+}
+
+.top-nav-link:link,
+.top-nav-link:visited{
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    padding: 0 0.4rem 0.3rem;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.top-nav-link:hover,
+.top-nav-link:active{
+    color: #A5C9CA;
+}
+
+.top-nav-link-ver:link,
+.top-nav-link-ver:visited {
+    color: #f4f4f4;
+    font-size: 1.8rem;
+    padding: 0 0.4rem 0.3rem;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.top-nav-link-ver:hover,
+.top-nav-link-ver:active {
+    color: #A5C9CA;
+}
+
+.modal-popper {
+    display: none;
+}
+
+.modal-window {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-list-ver {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-list-ver li {
+    margin-top: 2.4rem;
+}
+
+
+
+/* ----------------------------------------------------- */
+/* --------------------  CrashProbPublic Page  -------------------- */
+/* ----------------------------------------------------- */
+
+.home-page {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.side-info-container {
+    padding: 4rem 4.2rem 1.2rem;
+    /*flex-basis: 24%;*/
+}
+
+.headings {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.select-year {
+    width: 90%;
+    margin: 0 auto 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.year {
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 auto;
+    padding: 0.2rem 0;
+    margin-right: 0.2rem;
+    background-color: #0A0F23FF;
+    border-radius: 5px;
+}
+
+.active-year {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.stocks-list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stock-list-item {
+
+    margin: 0 auto 0.3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    align-items: center;
+}
+
+.gradient-hr {
+    height: 5px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto 3rem;
+    background: linear-gradient(to right, #f54343, #C779D0, #4bc0c8);
+}
+
+.list-indicator {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #849ecb;
+}
+
+.threat-level {
+    width: 17rem;
+    height: 17rem;
+    margin: 4rem auto 0;
+}
+
+/* ----------------------------------------------------- */
+/* --------------------  Map CrashProbPublic Page  -------------------- */
+/* ----------------------------------------------------- */
+
+.map-container {
+    flex-basis: 80%;
+    position: relative;
+    background-image: linear-gradient(rgba(2, 1, 2, 0.6), rgba(2, 1, 2, 0.6)), url("../images/dottedMap.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hover-country-data {
+    background-color: #080f0d;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0.2rem 0.4rem;
+}
+
+.build-img-container {
+    max-width: 2rem;
+    border-radius: 4px;
+    margin-right: 0.6rem;
+}
+
+.build-img-container>img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.russia-card {
+    top: 26%;
+    right: 18%;
+}
+
+.russia-card>.build-img-container {
+    background-color: #CB950DFF;
+}
+
+.country-name {
+    margin-bottom: 0.2rem;
+}
+
+.country-stock-value {
+    font-size: 1.1rem;
+}
+
+.uk-card {
+    top: 25%;
+    right: 44%;
+}
+
+.uk-card>.build-img-container {
+    background-color: #03a5ed;
+}
+
+.us-card {
+    top: 39%;
+    left: 15%
+}
+
+.us-card>.build-img-container {
+    background-color: #3d0755;
+}
+
+.brazil-card {
+    bottom: 38%;
+    left: 29%;
+}
+
+.brazil-card>.build-img-container {
+    background-color: #3c5fe5;
+}
+
+.crash-parameters {
+    position: absolute;
+    bottom: 2.6rem;
+    right: 12.8rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.tax-parameter>p, .tax-parameter>h3 {
+    margin-bottom: 0.3rem;
+}
+
+.tax-parameter>h3 {
+    font-size: 1.4rem;
+}
+
+.vertical-line {
+    height: 4rem;
+    width: 4px;
+    background-color: #1a1a1b;
+    position: relative;
+}
+
+.vertical-line:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 1.2rem;
+    background-color: #e65169;
+}
+
+.opinion-container {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.opinion:link,
+.opinion:visited {
+    display: block;
+    margin: 0 auto 0.8rem;
+    padding: 0.6rem 2.4rem;
+    color: #1c1b35;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #9494cc;
+    border: 1px solid #9494cc;
+    transition: all 0.4s;
+}
+
+.opinion:hover,
+.opinion:active {
+    color: #1a1a31;
+    background-color: #8b9acb;
+}
+
+.mobile-home-page {display: none}
+
+
+
+@media only screen and (max-width: 1140px) {
+    :root {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    .top-nav-links>li {
+        margin-left: 2rem;
+    }
+
+    .map-container {
+        flex-basis: 60%;
+    }
+
+    .crash-parameters {
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 930px){
+    .crash-parameters {
+        font-size: 12px;
+        right: 4rem;
+        gap: 0.8rem;
+    }
+
+    .crash-parameters>h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .top-nav-links {
+        display: none;
+    }
+
+    .nav-logo {
+        font-size: 1.8rem;
+    }
+
+    .modal-popper {
+        display: inline-block;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .opinion {
+        width: 60%;
+    }
+
+    /*.home-page {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.mobile-home-page {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: space-between;*/
+    /*    !*align-items: center;*!*/
+    /*    width: 90%;*/
+    /*    height: 80vh;*/
+    /*    margin: 6rem auto;*/
+    /*}*/
+
+    .threat-level {
+        margin: 6rem auto 3rem;
+        width: 19rem;
+        height: 19rem;
+    }
+
+    .select-year {
+        margin-top: 4rem;
+    }
+
+    .home-page {
+        display: block;
+    }
+
+    .map-container {
+        display: none;
+    }
+
+    .side-info-container {
+        padding-top: 5.4rem;
+        background-image: linear-gradient(rgba(2, 1, 2, 0.8), rgba(2, 1, 2, 0.8)), url("../images/dottedMap.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .opinion {
+        width: 90%;
+    }
+}
