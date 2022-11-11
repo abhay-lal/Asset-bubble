@@ -16,9 +16,12 @@ def model():
             df.dropna(inplace=True)
             df.drop(columns='DateTime',axis=1,inplace=True)
             df.drop(columns="TIME",inplace=True)
+            df.to_csv('/home/abhaylal/Desktop/Projects/4406b380-4ee6-4320-955b-eb9e6e2f0f44/data-new.csv')
             x=df.drop(columns="Crash")
             y=df["Crash"]
             x_train,x_test,y_train,y_test=train_test_split(x,y)
+            x_train=x_train.values()
+            y_train=y_train.values()
             model=Sequential()
             model.add(Dense(256,activation="relu"))
             model.add(Dropout(0.2))
@@ -34,6 +37,9 @@ def model():
             model.save('ann.h5')
             #y_pred=model.predict(x_test)
             #print("Accuracy: ",metrics.accuracy_score(y_test,y_pred))
+def mod():
+    model=tf.keras.models.load_model('ann.h5')
+    model.predict()
 def main():
     model()
 if __name__=="__main__":
