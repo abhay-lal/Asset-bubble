@@ -20,6 +20,7 @@ def model():
             x=df.drop(columns="Crash")
             y=df["Crash"]
             x_train,x_test,y_train,y_test=train_test_split(x,y)
+            input_shape=x_train
             model=Sequential()
             model.add(Conv1D(256,activation="relu",kernel_size=(3)))
             model.add(MaxPooling1D(pool_size=(2)))
