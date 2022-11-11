@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Dense , Dropout
 from sklearn import metrics
 from tensorflow.keras.optimizers import Adam
 def model():
-            df=pd.read_csv('/home/coder/project/workspace/data.csv')
+            df=pd.read_csv('data.csv')
             df.drop(columns='Reason',axis=1,inplace=True)
             df.drop(columns='LOCATION',axis=1,inplace=True)
             df['DateTime']=pd.to_datetime(df['TIME'])
@@ -30,7 +30,8 @@ def model():
             model.add(Dropout(0.25))
             model.add(Dense(1,activation="sigmoid"))
             model.compile(optimizer='Adam',loss="binary_crossentropy",metrics=['accuracy'])
-            model.fit(x_train,y_train,epochs=100)
+            model.fit(x_train,y_train,epochs=300)
+            model.save('ann.h5')
             #y_pred=model.predict(x_test)
             #print("Accuracy: ",metrics.accuracy_score(y_test,y_pred))
 def main():
