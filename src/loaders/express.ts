@@ -1,52 +1,63 @@
-import express from 'express'
-import helmet from 'helmet'
-import mongoSanitize from 'express-mongo-sanitize'
-import passport from 'passport'
-import {errorConverter, errorHandler} from '../middlewares/error'
-import authLimiter from '../middlewares/rateLimiter'
-import jwtStrategy from '../config/passport'
-import ApiError from '../utils/ApiError'
-import config from '../config'
-import morgan from './morgan'
-import routes from '../routes'
+import express from 'express';
+import helmet from 'helmet';
+import mongoSanitize from 'express-mongo-sanitize';
+import passport from 'passport';
+import { errorConverter, errorHandler } from '../middlewares/error';
+import authLimiter from '../middlewares/rateLimiter';
+import jwtStrategy from '../config/passport';
+import ApiError from '../utils/ApiError';
+import config from '../config';
+import morgan from './morgan';
+import routes from '../routes';
 
-const xss = require('xss-clean')
-const compression = require('compression')
-const cors = require('cors')
-const httpstatus = require('http-status')
+const xss = require('xss-clean');
+const compression = require('compression');
+const cors = require('cors');
+const httpStatus = require('http-status');
 
-export default ({ app }: {app: express.Application}) => {
-    if(config.env !== 'test') {
-        app.use(morgan.successHandler)
-        app.use(morgan.errorHandler)
-    }
+export default ({ app }: { app: express.Application }) => {
+  if (config.env !== 'test') {
+    app.use(morgan.successHandler);
+    app.use(morgan.errorHandler);
+  }
 
-    app.use(helmet())
+  // set security HTTP headers
+  app.use(helmet());
 
-    app.use(express.json({ limit: '100kb' }))
+  // parse json request body with limit
+  app.use(express.json({ limit: '100kb' }));
 
-    app.use(express.urlencoded({extended: true, limit: '10kb'}))
+  // parse urlencoded request body
+  app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
-    app.use(xss())
-    app.use(mongoSanitize())
+  // sanitize request data
+  app.use(xss());
+  app.use(mongoSanitize());
 
-    app.use(compression())
+  // gzip compression
+  app.use(compression());
 
-    app.use(cors())
+  // enable cors
+  app.use(cors());
 
-    app.use(passport.initialize())
-    passport.use('jwt', jwtStrategy)
+  // jwt authentication
+  app.use(passport.initialize());
+  passport.use('jwt', jwtStrategy);
 
-    if(config.env === 'production') {
-        app.use('/auth', authLimiter)
-    }
-    app.use('/', routes)
+  // limit repeated failed requests to auth endpoints
+  if (config.env === 'production') {
+    app.use('/auth', authLimiter);
+  }
+  app.use('/', routes);
 
-    app.use((req, res, next) => {
-        next(new ApiError(httpstatus.NOT_FOUND, 'Not found'))
-    })
+  // send back a 404 error for any unknown api request
+  app.use((req, res, next) => {
+    next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));
+  });
 
-    app.use(errorConverter)
+  // convert error to ApiError, if needed
+  app.use(errorConverter);
 
-    app.use(errorHandler)
-}
+  // handle error
+  app.use(errorHandler);
+};
