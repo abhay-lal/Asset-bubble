@@ -47,4 +47,10 @@ export default {
     verifyEmailExpirationMinutes:
       envVars.data.JWT_VERIFY_EMAIL_EXPIRATION_MINUTES,
   },
+  twitter: {
+    consumerKey: envVars.data.TWITTER_CONSUMER_KEY,
+    consumerSecret: envVars.data.TWITTER_CONSUMER_SECRET,
+    accessToken: envVars.data.TWITTER_ACCESS_TOKEN,
+    accessTokenSecret: envVars.data.TWITTER_ACCESS_TOKEN_SECRET,
+  },
 };
