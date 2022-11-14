@@ -50,3 +50,13 @@ export type HistoryUpdate = {
   year?: number;
   month?: number;
 };
+
+export type Stat = {
+  totalClicks: number;
+  bearishClicks: number;
+};
+
+export type StatUpdate = {
+  totalClicks?: number;
+  bearishClicks?: number;
+};
