@@ -3,16 +3,16 @@ import { Types } from 'mongoose';
 
 const createStat = z.object({
   body: z.object({
-    totalClicks: z.number(),
-    bearishClicks: z.number(),
+    totalClicks: z.string(),
+    bearishClicks: z.string(),
   }),
 });
 
 const getStats = z.object({
   query: z
     .object({
-      totalClicks: z.number(),
-      bearishClicks: z.number(),
+      totalClicks: z.string(),
+      bearishClicks: z.string(),
       sortBy: z.string(),
       limit: z.number().int(),
       page: z.number().int(),
@@ -43,8 +43,8 @@ const updateStat = z.object({
       }),
   }),
   body: z.object({
-    totalClicks: z.number(),
-    bearishClicks: z.number(),
+    totalClicks: z.string(),
+    bearishClicks: z.string(),
   }),
 });
 

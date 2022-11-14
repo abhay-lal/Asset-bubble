@@ -1,6 +1,6 @@
 import httpStatus from 'http-status';
 import ApiError from '../utils/ApiError';
-import StatModel from '../models/stat/stat.model';
+import StatModel from '../models/stats/stat.model';
 import { Stat, StatUpdate } from '../shared/customTypes';
 
 const createStat = async (statBody: Stat) => {

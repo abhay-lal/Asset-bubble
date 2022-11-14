@@ -1,8 +1,8 @@
 import { Document, Model } from 'mongoose';
 
 export interface IStat {
-  totalClicks: number;
-  bearishClicks: number;
+  totalClicks: string;
+  bearishClicks: string;
   dateOfEntry: Date;
   lastUpdated: Date;
 }
