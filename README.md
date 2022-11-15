@@ -18,7 +18,10 @@ The data were acquired from different open source links on the internet but most
 * Low - It is the lowest price of the index in the particular time frame
 
 * Close - It is the Closing price(The price at which the day or particular timeframe ended).
-The industrial production index (IPI) - IPI measures levels of production and capacity in the manufacturing, mining, electric, and gas industries, relative to a base year. The Federal Reserve Board (FRB) publishes the IPI in the middle of every month, and revisions to previous estimates at the end of every March.
+
+* Industrial production index (IPI) - IPI measures levels of production and capacity in the manufacturing, mining, electric, and gas industries, relative to a base year. 
+
+* Federal Reserve Board (FRB) - publishes the IPI in the middle of every month, and revisions to previous estimates at the end of every March.
 
 * Treasury - Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis. (updated on the 11th business day of each month.)
 
