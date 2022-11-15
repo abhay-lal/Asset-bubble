@@ -14,6 +14,13 @@ const envSchema = z.object({
   JWT_ACCESS_EXPIRATION_MINUTES: z.string().default('60'),
   JWT_REFRESH_EXPIRATION_DAYS: z.string().default('15'),
   JWT_RESET_PASSWORD_EXPIRATION_MINUTES: z.string().default('20'),
+<<<<<<< HEAD
+=======
+  TWITTER_CONSUMER_KEY: z.string(),
+  TWITTER_CONSUMER_SECRET: z.string(),
+  TWITTER_ACCESS_TOKEN_KEY: z.string(),
+  TWITTER_ACCESS_TOKEN_SECRET: z.string(),
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
   // JWT_VERIFY_EMAIL_EXPIRATION_MINUTES: z.number().default(20),
 });
 
@@ -47,4 +54,13 @@ export default {
     verifyEmailExpirationMinutes:
       envVars.data.JWT_VERIFY_EMAIL_EXPIRATION_MINUTES,
   },
+<<<<<<< HEAD
+=======
+  twitter: {
+    consumerKey: envVars.data.TWITTER_CONSUMER_KEY,
+    consumerSecret: envVars.data.TWITTER_CONSUMER_SECRET,
+    accessToken: envVars.data.TWITTER_ACCESS_TOKEN_KEY,
+    accessTokenSecret: envVars.data.TWITTER_ACCESS_TOKEN_SECRET,
+  },
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 };

@@ -33,7 +33,11 @@ export default function (props) {
         */}
             <div style={{ width: `84%` }}>
                 <CircularProgressbar
+<<<<<<< HEAD
                     value={bearishVal===0?0:100-bearishVal}
+=======
+                    value={100-bearishVal}
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
                     strokeWidth={props.strokeWidth}
                     styles={buildStyles({
                         trailColor: 'rgba(255,255,255,0.15)',

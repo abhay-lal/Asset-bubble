@@ -9,6 +9,10 @@ import ApiError from '../utils/ApiError';
 import config from '../config';
 import morgan from './morgan';
 import routes from '../routes';
+<<<<<<< HEAD
+=======
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 const xss = require('xss-clean');
 const compression = require('compression');
 const cors = require('cors');

@@ -110,8 +110,13 @@
 }
 
 .content-speedometer {
+<<<<<<< HEAD
     height: 350px;
     width: 350px;
+=======
+    height: 25rem;
+    width: 25rem;
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
     position: relative;
     border-radius: 50%;
     padding: 2rem;
@@ -189,3 +194,53 @@
 .custom-data-form>button:hover {
     background: #a339c9;
 }
+<<<<<<< HEAD
+=======
+
+@media only screen and (max-width: 1400px) {
+    .prev-card-container {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1245px) {
+    .data-elt {
+        width: 80%;
+    }
+
+    .prev-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 900px)  {
+    .user-data-check {
+        grid-template-columns: 1fr;
+    }
+
+    .prev-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .responsive-hidden {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .data-elt {
+        width: 90%;
+    }
+
+    .prev-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-data-form>button {
+        width: 80%;
+    }
+}
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b

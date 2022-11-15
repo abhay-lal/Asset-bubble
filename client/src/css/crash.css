@@ -363,6 +363,19 @@ header {
 
 .mobile-home-page {display: none}
 
+<<<<<<< HEAD
+=======
+.chart-Container {
+    padding: 0 2rem 4rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6rem;
+    grid-row-gap: 6rem;
+    justify-content: center;
+}
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 
 
 @media only screen and (max-width: 1140px) {
@@ -370,6 +383,13 @@ header {
         font-size: 15px;
     }
 
+<<<<<<< HEAD
+=======
+    .chart-Container {
+        grid-template-columns: 1fr;
+    }
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
     h1 {
         font-size: 2.4rem;
     }
@@ -391,6 +411,21 @@ header {
     }
 }
 
+<<<<<<< HEAD
+=======
+@media only screen and (max-width: 1300px) {
+    .chart-card {
+        max-width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .chart-card {
+        max-width: 80vw;
+    }
+}
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 @media only screen and (max-width: 930px){
     .crash-parameters {
         font-size: 12px;
@@ -398,6 +433,13 @@ header {
         gap: 0.8rem;
     }
 
+<<<<<<< HEAD
+=======
+    .chart-card {
+        max-width: 80vw;
+    }
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
     .crash-parameters>h3 {
         font-size: 1.2rem;
     }

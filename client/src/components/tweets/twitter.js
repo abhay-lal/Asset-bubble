@@ -1,5 +1,6 @@
 import "../../css/tweets.css"
 import Header from "../reuse/header";
+<<<<<<< HEAD
 import tweetLeftData from "./tweetleftdata";
 import tweetRightData from "./tweetrightdata"
 import TweetCard from "./tweetcard";
@@ -13,18 +14,46 @@ export default function () {
         return (
             <TweetCard
                 {...tweet}
+=======
+import TweetCard from "./tweetcard";
+import {fetchTweets} from "../apis/api";
+import {useEffect, useState} from "react";
+
+export default function () {
+
+    const [tweetsData, setTweetsData] = useState([])
+
+    const tweetsLeft = tweetsData?.slice(0, 8).map(tweet => {
+        return (
+            <TweetCard
+                name={tweet.user.name}
+                username={tweet.user.screen_name}
+                description={tweet.text}
+                link={tweet.user.screen_name}
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
             />
         )
     })
 
+<<<<<<< HEAD
     const tweetsRight = tweetRightData.map(tweet => {
         return (
             <TweetCard
                 {...tweet}
+=======
+    const tweetsRight = tweetsData?.slice(8, 15).map(tweet => {
+        return (
+            <TweetCard
+                name={tweet.user.name}
+                username={tweet.user.screen_name}
+                description={tweet.text}
+                link={tweet.user.screen_name}
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
             />
         )
     })
 
+<<<<<<< HEAD
     // useEffect(() => {
     //     // fetchTweets();
     //     const T = new Twit({
@@ -41,6 +70,15 @@ export default function () {
     //     })
     //
     // }, [])
+=======
+    useEffect(() => {
+        fetchTweets()
+            .then(res => {
+                console.log(res.data.result.data.statuses);
+                setTweetsData(res.data.result.data.statuses);
+            });
+    }, [])
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 
     return (
         <main>

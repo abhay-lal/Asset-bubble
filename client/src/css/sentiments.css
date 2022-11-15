@@ -1,0 +1,101 @@
+.sentiment-card-container {
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+    width: 80%;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.sentiment-page-heading {
+    margin-top: 3rem;
+    text-align: center;
+    color: #A5C9CA;
+}
+
+.sentiment-right-card {
+    margin-top: 8rem;
+}
+
+.sentiment-card {
+    width: 85%;
+    background-color: rgb(28, 27, 53);
+    border-radius: 15px;
+    padding: 1rem 2rem 3rem;
+    margin: 0 auto 4rem;
+}
+
+.sentiment-image {
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.sentiment-image>img {
+    width: 100%;
+    opacity: .7;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.sentiment-image>img:hover {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.author-name {
+    color: #61dafb;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #A5C9CA;
+    max-width: 80%;
+    margin: 1rem 0;
+}
+
+.summary {
+    width: 90%;
+    margin: 0 0 2rem;
+}
+
+.sentiment-label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sentiment-type {
+    color: #A5C9CA;
+    margin-bottom: 0.4rem;
+}
+
+.sentiment-ratio {
+    color: #e65169;
+}
+
+.sentiment-link:link,
+.sentiment-link:visited {
+    font-size: 1.1rem;
+    color: #A5C9CA;
+    padding: 0.8rem 1.8rem;
+    border: 1px solid #A5C9CA;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.sentiment-link:active,
+.sentiment-link:hover {
+    color: #222222;
+    background-color: #A5C9CA;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sentiment-card-container{
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -8,14 +8,23 @@ export default function (props) {
 
     React.useEffect(()=>{
         setTimeout(()=>{
+<<<<<<< HEAD
             setFinalVal(props.value);
+=======
+            setFinalVal(props.value)
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
         }, 1000)
     }, [finalVal])
 
     return (
         <CircularProgressbarWithChildren
             value={finalVal}
+<<<<<<< HEAD
             text={`${finalVal}%`}
+=======
+            text={(finalVal)?`${finalVal.toFixed(1)}%`:'0%'}
+            // text={`${finalVal.toFixed(1)}%`}
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
             strokeWidth={10}
             styles={buildStyles({
                 strokeLinecap: "butt",

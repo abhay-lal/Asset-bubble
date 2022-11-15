@@ -6,7 +6,14 @@ import CountryStockIndexSidebar from "./country-stock-index-sidebar";
 import parametersData from "./parametersData";
 import ParameterIndexDisplay from "./parameterIndexDisplay";
 import {Link} from "react-router-dom";
+<<<<<<< HEAD
 import React from "react";
+=======
+import React, {useEffect} from "react";
+import axios from "axios";
+import {chartData} from "./chartData";
+import PredictedChart from "./predictedChart";
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 
 export default function CrashProbPublic () {
 
@@ -19,6 +26,18 @@ export default function CrashProbPublic () {
         )
     })
 
+<<<<<<< HEAD
+=======
+    const chartHtml = chartData.map(data => {
+        return (
+                <PredictedChart
+                    type={data.type}
+                    vals={data.values}
+                />
+            );
+    })
+
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
     const countrySideCards = countryData.map(country => {
         return (
             <CountryStockIndexSidebar
@@ -26,7 +45,11 @@ export default function CrashProbPublic () {
                 key={country.id}
             />
         )
+<<<<<<< HEAD
     })
+=======
+    });
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 
     return (
         <main>
@@ -40,11 +63,16 @@ export default function CrashProbPublic () {
                         <h1>$1,287,572</h1>
                     </div>
 
+<<<<<<< HEAD
                     <div className={"select-year"}>
                         <div className={"year"}>2018</div>
                         <div className={"year active-year"}>2019</div>
                         <div className={"year"}>2020</div>
                         <div className={"year"}>2021</div>
+=======
+                    <div style={{textAlign: 'center', marginBottom: '0.6rem'}}>
+                        <h3>Current Market Caps</h3>
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
                     </div>
 
                     <div className={"gradient-hr"}></div>
@@ -83,6 +111,7 @@ export default function CrashProbPublic () {
                     </div>
                 </div>
             </section>
+<<<<<<< HEAD
 
             {/*<section className={"mobile-home-page"}>*/}
             {/*    <div className={"threat-level"}>*/}
@@ -121,6 +150,12 @@ export default function CrashProbPublic () {
             {/*    </div>*/}
 
             {/*</section>*/}
+=======
+            <h1 style={{color: '#A5C9CA', textAlign: 'center', margin:'4rem'}}>Predict Data For Next Year</h1>
+            <section className={'chart-Container'}>
+                {chartHtml}
+            </section>
+>>>>>>> f16c2143db4a93fa3798e5e7ba817f2e2ca8982b
 
         </main>
     )

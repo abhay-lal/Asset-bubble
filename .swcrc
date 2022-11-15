@@ -1,16 +1,16 @@
 {
     "env": {
-      "target": {
-        "node": 16
-      }
+        "target": {
+            "node": 16
+        }
     },
     "jsc": {
-      "parser": {
-        "syntax": "typescript"
-      }
+        "parser": {
+            "syntax": "typescript"
+        }
     },
     "module": {
-      "type": "commonjs"
+        "type": "commonjs"
     },
     "sourceMaps": "inline"
-  }
+}
