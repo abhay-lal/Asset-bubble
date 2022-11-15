@@ -8,12 +8,12 @@ const router = Router();
 
 router
   .route('/')
-  .get(auth(), validate(statValidation.getStats), statController.getStats)
+  .get(validate(statValidation.getStats), statController.getStats)
   .post(auth(), validate(statValidation.createStat), statController.createStat);
 
 router
   .route('/:statId')
-  .get(auth(), validate(statValidation.getStat), statController.getStat)
+  .get(validate(statValidation.getStat), statController.getStat)
   .patch(auth(), validate(statValidation.updateStat), statController.updateStat)
   .delete(
     auth(),

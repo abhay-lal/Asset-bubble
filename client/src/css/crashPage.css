@@ -1,0 +1,238 @@
+.user-data-check {
+    margin-top: 3rem;
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    column-gap: 1.2rem;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+}
+
+.graph-container>h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    color: #A5C9CA;
+    font-weight: 600;
+}
+
+.graph-container {
+    margin-top: 4.2rem;
+    padding: 0 0 0 2rem;
+}
+
+.prev-card-container {
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    gap: 2rem;
+    background-color: rgba(17, 16, 38, 0.2);
+    border-radius: 20px;
+}
+
+.prev-card-container::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 2px;
+}
+
+.prev-card-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #111026;
+}
+
+.prev-card-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+.prev-card-container::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #999;
+}
+
+
+.prev-data-card {
+    display: inline-block;
+    padding: 1.2rem 3.2rem 2rem;
+    text-align: left;
+    background-color: #1c1b35;
+    border: 2px solid #111026;
+    border-radius: 17px;
+    margin: 0 auto;
+}
+
+.prev-data-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.prev-data-heading>p {
+    font-weight: 600;
+}
+
+.prev-data-heading>h2 {
+    font-size: 2.6rem;
+    color: #8830a7;
+}
+
+.validate-btn:link,
+.validate-btn:visited {
+    font-size: 1.1rem;
+    color: #A5C9CA;
+    padding: 0.6rem 2rem;
+    border: 1px solid #A5C9CA;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.validate-btn:active,
+.validate-btn:hover {
+    color: #171617;
+    background-color: #A5C9CA;
+}
+
+.data-list {
+    margin-bottom: 3rem;
+}
+
+.data-list>li {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.data-list>li>span {
+    margin-left: 0.6rem;
+}
+
+.content-speedometer {
+    height: 25rem;
+    width: 25rem;
+    position: relative;
+    border-radius: 50%;
+    padding: 2rem;
+    border: 2px solid #171617;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-speedometer::after, .content-speedometer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-speedometer::after {
+    height: 130%;
+    width: 130%;
+    border: 19px solid #171617;
+}
+
+.content-speedometer::before {
+    height: 170%;
+    width: 170%;
+    border: 3px solid #171617;
+}
+
+.custom-data-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.data-elt {
+    display: block;
+    width: 60%;
+    padding: 0.2rem 2rem;
+    margin: 0 auto 1.2rem;
+    color: #A5C9CA;
+    border-radius: 15px;
+    border: 1px solid #8830a7;
+}
+
+.data-elt>input {
+    width: 100%;
+    color: #A5C9CA;
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+}
+
+.data-elt>input::placeholder {
+    color: #f4f4f4;
+    opacity: 0.6;
+}
+
+.custom-data-form>button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background: #8830a7;
+    color: #f4f4f4;
+    padding: 0.6rem 0.2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+.custom-data-form>button:hover {
+    background: #a339c9;
+}
+
+@media only screen and (max-width: 1400px) {
+    .prev-card-container {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1245px) {
+    .data-elt {
+        width: 80%;
+    }
+
+    .prev-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 900px)  {
+    .user-data-check {
+        grid-template-columns: 1fr;
+    }
+
+    .prev-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .responsive-hidden {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .data-elt {
+        width: 90%;
+    }
+
+    .prev-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-data-form>button {
+        width: 80%;
+    }
+}

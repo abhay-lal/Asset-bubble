@@ -9,7 +9,6 @@ const router = Router();
 router
   .route('/')
   .get(
-    auth(),
     validate(commentValidation.getComments),
     commentController.getComments
   )
