@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "rimraf dist && swc ./src -d dist",
-    "dev": "yarn build && yarn start",
+    "dev": "npm run build && npm run start",
     "del": "rimraf dist"
   },
   "repository": "https://github.com/sreyom31/bigbull",
