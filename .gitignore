@@ -1,0 +1,7 @@
+*.log
+logs
+.npm
+node_modules/
+.env
+.eslintcache
+dist
