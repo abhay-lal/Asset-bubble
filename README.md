@@ -25,9 +25,13 @@ The industrial production index (IPI) - IPI measures levels of production and ca
 ## Reasoning for labeling data
 Initially we labelled the major crashes on S&p 500 chart then we corelated the crashes phase with different ecomic data such as CPI, Unemployment, EPS trend etc. Then we found the corelation between crash phases and those economic datas. We filtered out the data which were correlating before the crash and during the crash and eliminated all other data which were later factored after the crash.We marked all the major crash phase with “1” and trained the model with all same economic data to predict the future probability of crash.
 
-## About models created 
+## Approach to solve
 Firstly forecasted the values for S&B 500 for a period of 24 months using ARIMA and SARIMAX models.This was used to better evaluate the predicted data and carry out , economical analysis on the the time period of prediction of crash.
 A binary classifier classifying as crash or not with an 11 features input was created using several Machine Learning algorithms out of which random forests and decisison trees performed the best.A deep learning model was trained using Keras to give and accuracy of 87% using CNNs and 82% using DNNs.Machine learning models like random forests gave an accuracy of 94%. The precission , recall and F1-Score was judged and the best keras model was deployed using Tensorflow JS.
+Along with this the Twitter API has been used to fetch tweets regardings stocks in realtime in order to analyse the current stock data.Used Alpha Vantage API to display the  market sentiments using articles and give information about the barish and bullish nature of important individuals.
+
+## About model 
+ARIMA and SARIMAX models were used to forecast the values for next 2 years by identifying the stationary and non-stationary features in the data.ARIMA stands for auto regressive integrated moving average. SARIMAX is similar and stands for seasonal auto regressive integrated moving average with exogenous factors.CNN model was used with the following architecture to classify if the crash will occur or not. The CNN model has 512 nodes in the first Conv1D layer followed by dropout of 0.2 , the second layer with 256 nodes and dropout , third layer and fourth layer with 128 nodes each and 0.2 dropout.The Relu activation function was used in all these layers.Finally 1 dense layer with Sigmoid Activation function to perform binary classification. The model was compiled with 'adam' optimizer and loss was taken as 'binary crossentropy'.
 
 ## UI/UX
 ![Landing](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/landing.jpeg)
@@ -53,10 +57,6 @@ A binary classifier classifying as crash or not with an 11 features input was cr
 * NUMPY 
 * PANDAS
 * TWITTER API V2
-* GITHUB
-* HTML
-* CSS
-* JAVASCRIPT
 * PYTHON 
 * TYPESCRIPT
 
