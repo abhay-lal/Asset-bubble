@@ -258,9 +258,9 @@ header {
     border-radius: 4px;
 }
 
-.russia-card {
-    top: 26%;
-    right: 18%;
+.korea-card {
+    top: 60%;
+    right: 15%;
 }
 
 .russia-card>.build-img-container {
@@ -293,9 +293,9 @@ header {
     background-color: #3d0755;
 }
 
-.brazil-card {
-    bottom: 38%;
-    left: 29%;
+.china-card {
+    top: 42%;
+    right: 20%;
 }
 
 .brazil-card>.build-img-container {

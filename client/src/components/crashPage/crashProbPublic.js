@@ -7,7 +7,6 @@ import parametersData from "./parametersData";
 import ParameterIndexDisplay from "./parameterIndexDisplay";
 import {Link} from "react-router-dom";
 import React, {useEffect} from "react";
-import axios from "axios";
 import {chartData} from "./chartData";
 import PredictedChart from "./predictedChart";
 
@@ -48,8 +47,8 @@ export default function CrashProbPublic () {
                 <div className={"side-info-container"}>
 
                     <div className={"headings"}>
-                        <h2>Financial Statics</h2>
-                        <h1>$1,287,572</h1>
+                        <h2>Total US National Debt</h2>
+                        <h2>$31,281,482,300,750</h2>
                     </div>
 
                     <div style={{textAlign: 'center', marginBottom: '0.6rem'}}>
@@ -92,7 +91,7 @@ export default function CrashProbPublic () {
                     </div>
                 </div>
             </section>
-            <h1 style={{color: '#A5C9CA', textAlign: 'center', margin:'4rem'}}>Predict Data For Next Year</h1>
+            <h1 style={{color: '#A5C9CA', textAlign: 'center', margin:'4rem'}}>Predicted Data For Next Year</h1>
             <section className={'chart-Container'}>
                 {chartHtml}
             </section>

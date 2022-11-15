@@ -2,7 +2,7 @@ import build_img from "../../images/build-icon.png";
 
 export default function (props) {
     return (
-        <div className={`hover-country-data ${props.name.toLowerCase()}-card`}>
+        <div className={`hover-country-data ${props.country}-card`}>
             <div className={"build-img-container"}>
                 <img src={build_img} alt={"building-img"}/>
             </div>

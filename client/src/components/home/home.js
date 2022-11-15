@@ -9,8 +9,8 @@ export default function () {
             <Header />
 
             <div className={"main-content"}>
-                <h1>We are a distributed team</h1>
-                <p className={"home-heading-text"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h1>We Predict crash before everyone</h1>
+                <p className={"home-heading-text"}>We use different market data to analyse market crash using ML model.</p>
             </div>
 
             <section className={"home-section"}>

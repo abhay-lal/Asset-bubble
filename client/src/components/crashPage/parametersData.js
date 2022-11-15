@@ -1,24 +1,24 @@
 export default [
     {
         id: 1,
-        type: "Total Taxes",
-        price: 293566
+        type: "Tax Revenue",
+        price: 4915073025432
     },
     {
         id: 2,
-        type: "Excise Taxes",
-        price: 118457
+        type: "Revenue Per Citizen",
+        price: 14752
     },
 
     {
         id: 3,
-        type: "Payroll Taxes",
-        price: 95280
+        type: "Debt Per Citizen",
+        price: 3704
     },
 
     {
-        id: 2,
-        type: "Property Taxes",
-        price: 79829
+        id: 4,
+        type: "Median Income",
+        price: 36105
     }
 ]
