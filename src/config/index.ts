@@ -6,10 +6,10 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['production', 'development', 'test']),
-  PORT: z.string().default('5000'),
+  PORT: z.string().default('8080'),
   DB_URL: z
     .string()
-    .startsWith('mongodb://', { message: 'Must provide a MongoDB URL' }),
+    .startsWith('mongodb+srv://', { message: 'Must provide a MongoDB URL' }),
   JWT_SECRET: z.string(),
   JWT_ACCESS_EXPIRATION_MINUTES: z.string().default('60'),
   JWT_REFRESH_EXPIRATION_DAYS: z.string().default('15'),
