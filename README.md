@@ -34,10 +34,12 @@ A binary classifier classifying as crash or not with an 11 features input was cr
 
 ![Tweets](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/tweets.jpeg)
 
+![Model](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/predict.jpeg)
+
 ![Plots](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/plots.jpeg)
 
 
-## Technology Stack
+## Technology Stack 💻
 * REACT 
 * NODE JS
 * EXPRESS JS
@@ -58,6 +60,11 @@ A binary classifier classifying as crash or not with an 11 features input was cr
 * PYTHON 
 * TYPESCRIPT
 
-
+## Collaborators 🤖
+| Name      | GitHub Profile     |
+| :------------- | :----------: |
+|  Sreyom Sreesan Nayak  | [GitHub](https://github.com/sreyom31) |
+|  Abhay Lal (Team Lead) | [GitHub](https://github.com/abhay-lal) |
+|  Pulkit M| [GitHub]( https://github.com/Pulkit1802) |
 
 
