@@ -2,18 +2,18 @@ import { Types, Document, Model } from 'mongoose';
 
 export interface IHistory {
   user: Types.ObjectId;
-  unemployment: number;
-  cpi: number;
-  pe: number;
-  open: number;
-  high: number;
-  low: number;
-  close: number;
-  industrialProduction: number;
-  treasury: number;
-  crash: number;
-  year: number;
-  month: number;
+  unemployment: string;
+  cpi: string;
+  pe: string;
+  open: string;
+  high: string;
+  low: string;
+  close: string;
+  industrialProduction: string;
+  treasury: string;
+  crash: string;
+  year: string;
+  month: string;
   dateOfEntry: Date;
   lastUpdated: Date;
 }

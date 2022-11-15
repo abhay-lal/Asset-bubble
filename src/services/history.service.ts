@@ -1,6 +1,6 @@
 import httpStatus from 'http-status';
 import ApiError from '../utils/ApiError';
-import HistoryModel from '../models/history/history.model';
+import HistoryModel from '../models/histories/history.model';
 import { History, HistoryUpdate } from '../shared/customTypes';
 
 const createHistory = async (historyBody: History) => {

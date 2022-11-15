@@ -23,30 +23,40 @@ export type CommentUpdate = {
 
 export type History = {
   user: string;
-  cpi: number;
-  pe: number;
-  open: number;
-  high: number;
-  low: number;
-  close: number;
-  industrialProduction: number;
-  treasury: number;
-  crash: number;
-  year: number;
-  month: number;
+  cpi: string;
+  pe: string;
+  open: string;
+  high: string;
+  low: string;
+  close: string;
+  industrialProduction: string;
+  treasury: string;
+  crash: string;
+  year: string;
+  month: string;
 };
 
 export type HistoryUpdate = {
   user?: string;
-  cpi?: number;
-  pe?: number;
-  open?: number;
-  high?: number;
-  low?: number;
-  close?: number;
-  industrialProduction?: number;
-  treasury?: number;
-  crash?: number;
-  year?: number;
-  month?: number;
+  cpi?: string;
+  pe?: string;
+  open?: string;
+  high?: string;
+  low?: string;
+  close?: string;
+  industrialProduction?: string;
+  treasury?: string;
+  crash?: string;
+  year?: string;
+  month?: string;
+};
+
+export type Stat = {
+  totalClicks: string;
+  bearishClicks: string;
+};
+
+export type StatUpdate = {
+  totalClicks?: string;
+  bearishClicks?: string;
 };
