@@ -1,22 +1,26 @@
 export default [
     {
         id:1,
-        name: "Russia",
-        value: 231277,
+        name: "S&P",
+        country: "us",
+        value: 4018.38,
     },
     {
         id:2,
-        name: "UK",
-        value: 210228,
+        name: "CAC",
+        country: "uk",
+        value: 6630.15
     },
     {
         id:3,
-        name: "US",
-        value: 238460,
+        name: "Nikkei 225",
+        country: "china",
+        value: 27990.17,
     },
     {
         id:4,
-        name: "Brazil",
-        value: 128888,
+        name: "Kospi",
+        country: "korea",
+        value: 2480.3,
     }
 ]
