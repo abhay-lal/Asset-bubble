@@ -40,6 +40,8 @@ ARIMA and SARIMAX models were used to forecast the values for next 2 years by id
 
 ![Model](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/predict.jpeg)
 
+![Market sentiment](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/sentiment.jpeg)
+
 ![Plots](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/plots.jpeg)
 
 
@@ -64,7 +66,7 @@ ARIMA and SARIMAX models were used to forecast the values for next 2 years by id
 | Name      | GitHub Profile     |
 | :------------- | :----------: |
 |  Sreyom Sreesan Nayak  | [GitHub](https://github.com/sreyom31) |
-|  Abhay Lal (Team Lead) | [GitHub](https://github.com/abhay-lal) |
-|  Pulkit M| [GitHub]( https://github.com/Pulkit1802) |
+|  Abhay Lal | [GitHub](https://github.com/abhay-lal) |
+|  Pulkit M | [GitHub]( https://github.com/Pulkit1802) |
 
 
