@@ -29,6 +29,14 @@ Initially we labelled the major crashes on S&p 500 chart then we corelated the c
 Firstly forecasted the values for S&B 500 for a period of 24 months using ARIMA and SARIMAX models.This was used to better evaluate the predicted data and carry out , economical analysis on the the time period of prediction of crash.
 A binary classifier classifying as crash or not with an 11 features input was created using several Machine Learning algorithms out of which random forests and decisison trees performed the best.A deep learning model was trained using Keras to give and accuracy of 87% using CNNs and 82% using DNNs.Machine learning models like random forests gave an accuracy of 94%. The precission , recall and F1-Score was judged and the best keras model was deployed using Tensorflow JS.
 
+## UI/UX
+![Landing](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/landing.jpeg)
+
+![Tweets](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/tweets.jpeg)
+
+![Plots](https://github.com/iamneo-production/4406b380-4ee6-4320-955b-eb9e6e2f0f44/blob/main/Images/plots.jpeg)
+
+
 ## Technology Stack
 * REACT 
 * NODE JS
