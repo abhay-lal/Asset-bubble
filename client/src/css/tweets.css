@@ -1,0 +1,144 @@
+.just-tweets {
+    width: 80%;
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.tweets-left {
+    border-right: 4px solid #111026;
+}
+
+.tweets-right {
+    border-left: 4px solid #111026;
+}
+
+.tweet-card-container {
+    position: relative;
+    width: 100%;
+}
+
+.tweet-pop-up {
+    position: absolute;
+    top: 1.2rem;
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(28, 27, 53);
+    border: 1px solid rgb(28, 27, 53);
+    transition: all 0.4s;
+}
+
+.tweet-pop-up>a:link,
+.tweet-pop-up>a:visited {
+    color: #A5C9CA;
+    transition: all 0.4s;
+}
+
+.tweets-left .tweet-pop-up {
+    right: 0;
+    transform: translateX(56%);
+}
+
+.tweets-right .tweet-pop-up {
+    left: 0;
+    transform: translateX(-52%);
+}
+
+.tweet-card {
+    color: #cbcbcb;
+    background-color: rgba(53, 51, 124, 0.3);
+    padding: 1rem 2rem;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.tweet-pop-up:hover{
+    background-color: rgb(42, 40, 77);
+}
+
+.tweet-card:hover {
+    background-color: rgba(63, 61, 150, 0.35);
+}
+
+.tweet-pop-up:hover + .tweet-card {
+    background-color: rgba(63, 61, 150, 0.35);
+}
+
+.tweets-left .tweet-card {
+    margin-bottom: 6rem;
+}
+
+.tweets-right .tweet-card {
+    margin-top: 6rem;
+}
+
+.tweet-user {
+    margin-bottom: 1.1rem;
+}
+
+.tweet-user>h3 {
+    text-transform: none;
+}
+
+.tweet-description {
+    font-size: 1.2rem;
+    line-height: 135%;
+    margin-bottom: 1.2rem;
+}
+
+.tweet-date>span {
+    margin-right: 1.2rem;
+}
+
+.follow-tweet {
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+}
+
+.follow-tweet>a:link,
+.follow-tweet>a:visited {
+    font-size: 1.1rem;
+    color: #A5C9CA;
+    padding: 0.8rem 1.8rem;
+    border: 1px solid #A5C9CA;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.follow-tweet>a>i {
+    margin-left: 1rem;
+}
+
+.follow-tweet>a:active,
+.follow-tweet>a:hover {
+    color: #171617;
+    background-color: #A5C9CA;
+}
+
+.mobile-tweets-container {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .just-tweets {
+        display: none;
+    }
+
+    .mobile-tweets-container {
+        display: block;
+    }
+
+    .tweet-card {
+        margin-bottom: 3.2rem;
+    }
+
+    .tweet-pop-up {
+        display: none;
+    }
+
+}
