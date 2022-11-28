@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/index.js 8080",
     "build": "rimraf dist && swc ./src -d dist",
     "dev": "npm run build && npm run start",
     "del": "rimraf dist"

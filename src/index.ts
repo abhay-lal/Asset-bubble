@@ -13,7 +13,7 @@ import logger from './loaders/logger';
 let server: any;
 const app = express();
 Loaders({ expressApp: app }).then(() => {
-  server = app.listen(config.port, () => {
+  server = app.listen(Number(process.argv[2] || Number(process.env.PORT) || 8080), () => {
     logger.info(`🚀 Server started on port ${process.env.PORT}`);
   });
 });
