@@ -37,15 +37,15 @@ Along with this the Twitter API has been used to fetch tweets regardings stocks 
 ARIMA and SARIMAX models were used to forecast the values for next 2 years by identifying the stationary and non-stationary features in the data.ARIMA stands for auto regressive integrated moving average. SARIMAX is similar and stands for seasonal auto regressive integrated moving average with exogenous factors.CNN model was used with the following architecture to classify if the crash will occur or not. The CNN model has 512 nodes in the first Conv1D layer followed by dropout of 0.2 , the second layer with 256 nodes and dropout , third layer and fourth layer with 128 nodes each and 0.2 dropout.The Relu activation function was used in all these layers.Finally 1 dense layer with Sigmoid Activation function to perform binary classification. The model was compiled with 'adam' optimizer and loss was taken as 'binary crossentropy'.
 
 ## UI/UX
-![Landing](https://github.com/abhay-lal/Asset-bubble//main/Images/landing.jpeg)
+![Landing](https://github.com/abhay-lal/Asset-bubble/main/Images/landing.jpeg)
 
-![Tweets](https://github.com/abhay-lal/Asset-bubble//main/Images/tweets.jpeg)
+![Tweets](https://github.com/abhay-lal/Asset-bubble/main/Images/tweets.jpeg)
 
-![Model](https://github.com/abhay-lal/Asset-bubble//blob/main/Images/predict.jpeg)
+![Model](https://github.com/abhay-lal/Asset-bubble/blob/main/Images/predict.jpeg)
 
-![Market sentiment](https://github.com/abhay-lal/Asset-bubble//blob/main/Images/sentiment.jpeg)
+![Market sentiment](https://github.com/abhay-lal/Asset-bubble/blob/main/Images/sentiment.jpeg)
 
-![Plots](https://github.com/abhay-lal/Asset-bubble//blob/main/Images/plots.jpeg)
+![Plots](https://github.com/abhay-lal/Asset-bubble/blob/main/Images/plots.jpeg)
 
 
 ## Technology Stack 💻
