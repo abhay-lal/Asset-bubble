@@ -1,7 +1,10 @@
-# Team BigBull
+# Team BigBull - Winner of 1st Prize of Wells Fargo Hackathon
+[![UI](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://asset-bubble.netlify.app/)
+[![PPT](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://docs.google.com/presentation/d/1BapIzqo_bl02JEBKRHgdalBs0PHJONvD/edit?usp=sharing&ouid=101165323708654650304&rtpof=true&sd=true) 
+
 ## Problem Statement - Asset Bubble 
 ## About Data 
-The data were acquired from different open source links on the internet but most of them were retrieved from YahooFinance.
+The data was acquired from different open source links on the internet but most of them were retrieved from YahooFinance.
 ## Feature extraction 
 * Time - It is the time stamp of the price
 
